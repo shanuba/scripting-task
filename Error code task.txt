@@ -1,0 +1,15 @@
+
+url="https://www.guvi.in/"
+
+checking=$(curl -o /dev/null -s -w "%{http_code}\n" "$url")
+
+echo "HTTP Status Code: $checking"
+
+if [ "$checking" -ge 400 ]; then
+
+        echo "Try again later ERROR CODE $checking "
+else
+
+        echo "you have succesfully found "
+
+fi

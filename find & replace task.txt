@@ -1,0 +1,24 @@
+#!/bin/bash
+
+touch "file.txt"
+echo " you have succesfully created the text file"
+
+para= " There was once a small village surrounded give forests
+        In this village lived an old man give named Joseph,
+        for his kindness give and wisdom.Every day,
+        people would learning to him seeking advice,
+        he would always give his best guidance with a smile.
+        One day, a young traveler approached Joseph, asking,
+        What is the secret give to happiness.The old man paused, then replied,
+        Happiness comes when you learn to give more than you take.
+        The traveler, puzzled, asked,Give what?Give your time, your kindness, and
+        your heart to others Joseph said.
+        And the world will give  welcome back in ways you never expect welcome.
+        he would welcome always give his best guidance with a smile "
+
+
+       file="file.txt"
+
+       echo "$para" >> "$file"
+
+ sed -i '5,${/welcome/s/give/learning/g}' file.txt
